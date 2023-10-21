@@ -28,12 +28,12 @@ const SkillsSection = ({ allSkillsData }) => {
         <div className="text-center mb-16 md:mb-16">{allSkillsData.mainLine}</div>
 
         <div className={classes['SkillsContainer']}>
-          {techSkills.map((skillsData, index) => (
+          {techSkills && techSkills.map((skillsData, index) => (
             <article key={index} className="w-50 max-w-md flex-col flex items-center justify-start relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:border-light lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
               <div className="absolute top-0 left-0 -right-3 -z-10 w-[101.5%] h-[102%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
               <h2 className={classes.SkillTitle}>{skillsData.title}</h2>
               <div className={classes.SkillList}>
-                {skillsData.skills.map((item, childIndex) => (
+                {skillsData && skillsData.skills && skillsData.skills.map((item, childIndex) => (
                   <>
                     {item && <div key={childIndex} className={classes.SkillItem}>
                       {item && item.image && <FramerImage className={classes.SkillImage} priority src={item.image} alt="Tech Skill Item" />}
@@ -59,7 +59,7 @@ const SkillsSection = ({ allSkillsData }) => {
           <article className="w-full flex items-center justify-center relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 left-0 -right-3 -z-10 w-[101.5%] h-[102%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
             <div className={classes.SkillList}>
-              {softSkills.skills.map((item, childIndex) => (
+              {softSkills && softSkills.skills && softSkills.skills.map((item, childIndex) => (
                 <div key={childIndex} className={classes.SkillItem}>
                   <FramerImage className={classes.SkillImage} priority src={item.image} alt="Soft Skill Item" />
                   {item.title}
@@ -80,7 +80,7 @@ const SkillsSection = ({ allSkillsData }) => {
           <article className="w-full flex items-center justify-center relative rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
             <div className="absolute top-0 left-0 -right-3 -z-10 w-[101.5%] h-[102%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
             <div className={classes.SkillList}>
-              {currentlyLearning.map((item, childIndex) => (
+              {currentlyLearning && currentlyLearning.map((item, childIndex) => (
                 <div key={childIndex} className={classes.SkillItem}>
                   <FramerImage width={24} height={24} className={classes.SkillImage} priority src={item.image} alt="Currently Learning Skill Item" />
                   {item.title}

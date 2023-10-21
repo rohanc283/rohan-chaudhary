@@ -5,7 +5,7 @@ import AnimatedText from "./AnimatedText";
 import { divVariant } from "../data/motion";
 
 const ExperienceDetails = ({ experiences, index }) => {
-    return experiences.map((exp) => (
+    return experiences && experiences.map((exp) => (
         <Details
             key={exp.index}
             position={exp.position}
@@ -22,7 +22,7 @@ const ExperienceDetails = ({ experiences, index }) => {
 const Details = ({ position, company, companyLink, time, module, work, awards }) => {
     const ref = useRef(null);
     const displayWork = (works) => {
-        return works.map(function (description, index) {
+        return works && works.map(function (description, index) {
             return (
                 <li key={index} className="list-disc ms-9">
                     {description}

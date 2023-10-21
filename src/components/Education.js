@@ -6,7 +6,7 @@ import Link from "next/link";
 import { divVariant } from "../data/motion";
 
 const EducationDetails = ({ education }) => {
-    return education.map((educationFact) => (
+    return education && education.map((educationFact) => (
         <Details
             key={educationFact.name}
             name={educationFact.name}
@@ -19,7 +19,7 @@ const EducationDetails = ({ education }) => {
 };
 
 const CourseDetails = ({ courses }) => {
-    courses = courses.sort((a, b) => {
+    courses = courses && courses.sort((a, b) => {
         if (a.completionYear == b.completionYear) {
             if (a.month == b.month) {
                 return b.day - a.day;
@@ -29,7 +29,7 @@ const CourseDetails = ({ courses }) => {
         return b.completionYear - a.completionYear;
 
     });
-    return courses.map((courses, index) => (
+    return courses && courses.map((courses, index) => (
         <Details
             key={index}
             name={courses.courseTitle}

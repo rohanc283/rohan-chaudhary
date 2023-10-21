@@ -64,7 +64,7 @@ const WhatDoIDo = ({ data }) => {
             </div>
           </div>
 
-          {data.whatDoIDo.map((paragraph, i) => <span className='secondaryText' key={i}>{paragraph}</span>)}
+          {data && data.whatDoIDo && data.whatDoIDo.map((paragraph, i) => <span className='secondaryText' key={i}>{paragraph}</span>)}
 
 
           <div className="w-full px-2 mt-5 flex items-center justify-between md:hidden">
