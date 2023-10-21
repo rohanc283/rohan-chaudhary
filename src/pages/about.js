@@ -81,13 +81,13 @@ const About = () => {
                             <div className="hidden md:block" />
 
                             <div className="col-span-4 flex flex-col items-center justify-start xl:col-span-8 md:col-span-8 md:order-2">
-                                <h2 className="mb-4 text-lg font-bold uppercase text-primary dark:text-primaryDark">
+                                <h2 className="mb-4 text-center text-lg font-bold uppercase text-primary dark:text-primaryDark">
                                     {data.aboutTitle}
                                 </h2>
                                 <p className="text-justify font-medium indent-10">
                                     {data.aboutPara}
                                 </p>
-                                <h2 className=" my-4 text-lg font-bold uppercase text-primary dark:text-primaryDark">
+                                <h2 className=" my-4 text-center text-lg font-bold uppercase text-primary dark:text-primaryDark">
                                     Personal Details
                                 </h2>
                                 <p className="text-justify font-medium indent-10">

@@ -59,7 +59,8 @@ const Details = ({ name, company, year, place, link, score }) => {
                     <span className="uppercase font-bold text-primary dark:text-primaryDark">
                         {company}
                     </span>{" "}
-                    {company && "-"} {place} {score && "| "} {score && <span className="capitalize font-bold">{score}</span>}
+                    {company && "-"} {place} 
+                    {score && <h3 className="capitalize font-bold">{score}</h3>}
                     {link && <Link href={link} target="_blank" className="uppercase font-bold hover:underline">Credential</Link>}
                 </span>
             </motion.div>
