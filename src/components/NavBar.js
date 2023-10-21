@@ -86,7 +86,7 @@ const NavBar = () => {
                     ></span>
                 </button>
                 <button
-                    className={`w-6 scale-150 flex items-center hidden lg:flex absolute lg:right-7 lg:top-8 justify-center rounded-full ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                    className={`w-6 scale-150 flex items-center hidden lg:flex absolute lg:right-7 lg:top-9 justify-center rounded-full ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                         }`}
                     onClick={() => setMode(mode === "light" ? "dark" : "light")}
                 >
