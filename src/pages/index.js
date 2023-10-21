@@ -86,10 +86,7 @@ export default function Home() {
                             </div>
                         </motion.div>
                     </Layout>
-                    <motion.div initial="hidden"
-                        whileInView="show" variants={divVariant(0.2)} className="mt-20" >
-                        <WhatDoIDo data={data} />
-                    </motion.div>
+                    <WhatDoIDo data={data} />
                 </motion.main>
             }
         </>
