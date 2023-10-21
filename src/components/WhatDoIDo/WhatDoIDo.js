@@ -20,9 +20,10 @@ const WhatDoIDo = ({ data }) => {
         viewport={{ once: false, amount: 0.25 }}
         className={`flex item-center justify-center mt-5 mx-10 mb-10 ${css.container}`}>
 
-        <h2 className="font-bold text-8xl mb-10 w-full text-center md:text-6xl xs:text-4xl md:mb-10">
+        <motion.h2 initial="hidden"
+        whileInView="show" variants={divVariant(0.2)} className="font-bold text-8xl mb-10 w-full text-center md:text-6xl xs:text-4xl md:mb-10">
           What Do I Do
-        </h2>
+        </motion.h2>
 
         {/* left side */}
         <div className={css.leftSide}>
