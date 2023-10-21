@@ -3,14 +3,14 @@ import { skills } from "./data/Skills";
 import { divVariant } from "../data/motion";
 
 const displaySkills = (skills) => {
-    return skills && skills.skillsArray && skills.skillsArray.map(function (skill) {
+    return skills && skills.skillsArray && skills.skillsArray.map(function (skill, index) {
         var name = skill.name;
         var x = skill.x;
         var y = skill.y;
 
         return (
             <motion.div
-                key={name}
+                key={index}
                 className={`flex items-center justify-center rounded-full font-semibold ${skill.colorLight} text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:${skill.colorDark} lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 sm:bg-transparent sm:dark:bg-transparent sm:font-bold sm:text-xs sm:p-2 sm:text-dark sm:dark:text-light`}
                 whileHover={{ scale: 1.25 }}
                 initial={{ x: 0, y: 0 }}

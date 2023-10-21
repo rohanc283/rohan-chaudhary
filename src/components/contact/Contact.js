@@ -105,7 +105,7 @@ const Contact = ({ data }) => {
     <div className={css['contact-container']}>
       <div className={`${css.contactInfo} bg-dark dark:bg-light text-center text-light dark:text-dark lg:flex-col`}>
         <h2 className='m-auto mb-10 font-medium'>Contact Info</h2>
-        <div className='md:mt-7 font-medium'> Want to hire me or have an idea to discuss ? Shoot me an email if you want to connect!
+        <div className='font-medium'> Want to hire me or have an idea to discuss ? Shoot me an email if you want to connect!
         </div>
         <span className='mt-7 font-medium'>You can also find me on below links if that&apos;s more your speed</span>
         <ul className={`${css.sci}`}>

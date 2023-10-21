@@ -81,7 +81,6 @@ export default function Home() {
                                     src={data.profilePic}
                                     alt="Rohan Chaudhary's generated profile pic"
                                     className="h-auto m-auto rounded-full shadow-2xl lg:inline-block lg:w-full"
-                                    priority
                                     sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                                 />
                             </div>

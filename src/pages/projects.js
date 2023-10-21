@@ -59,7 +59,6 @@ const FeaturedProject = ({ title, summary, img, link, github, technologies }) =>
                         className="w-full h-auto flex justify-center items-center"
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.2 }}
-                        priority
                         sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
                     />
                 </div>
@@ -114,7 +113,7 @@ const Projects = () => {
             {isSuccess &&
                 <main className="w-full flex flex-col items-center justify-center dark:text-light">
                     <Layout className="pt-16 p-32 xl:p-24 lg:p-32 md:p-12 sm:pt-8 md:mt-10">
-                        <div initial="hidden" whileInView="show" variants={divVariant(0.2)}>
+                        <motion.div initial="hidden" whileInView="show" variants={divVariant(0.2)}>
                             <AnimatedText
                                 text="My Recent Projects"
                                 className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
@@ -125,7 +124,7 @@ const Projects = () => {
                             <h2 className="font-bold text-6xl mt-32 w-full text-center md:text-6xl xs:text-4xl">
                                 More To Come
                             </h2>
-                        </div>
+                        </motion.div>
                     </Layout>
                     <motion.div initial="hidden" whileInView="show" variants={divVariant(0.2)} className="m-auto w-3/4 flex flex-col items-center mt-10">
                         <h2 className="text-lg mb-5 font-bold uppercase text-center text-dark/75 dark:text-light/75">

@@ -65,7 +65,6 @@ const NavBar = () => {
     const handleClick = () => {
         setIsOpen(!isOpen);
     };
-    console.log(router.asPath)
     return (
         <>
             {isSuccess && <header className="w-full pr-0 py-6 font-medium flex items-center justify-center dark:text-light relative z-10">
@@ -231,7 +230,7 @@ const NavBar = () => {
                                 toggle={handleClick} />
                             <Link href={data.resumeLink}
                                 target="_blank"
-                                className="flex mr-1 items-center bg-light text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent hover:border-light dark:bg-dark dark:text-light hover:dark:bg-light hover:dark:text-dark hover:dark:border-dark md:p-2 md:px-4 md:text-base"
+                                className="flex mr-1 my-5 items-center bg-light text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent hover:border-light dark:bg-dark dark:text-light hover:dark:bg-light hover:dark:text-dark hover:dark:border-dark md:p-2 md:px-4 md:text-base"
                                 download={true}
                             >
                                 Resume <LinkArrow className={"w-6 ml-1"} />

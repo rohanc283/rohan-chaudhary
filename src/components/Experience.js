@@ -5,9 +5,9 @@ import AnimatedText from "./AnimatedText";
 import { divVariant } from "../data/motion";
 
 const ExperienceDetails = ({ experiences, index }) => {
-    return experiences && experiences.map((exp) => (
+    return experiences && experiences.map((exp, index) => (
         <Details
-            key={exp.index}
+            key={index}
             position={exp.position}
             company={exp.companyName}
             companyLink={exp.companyLink}

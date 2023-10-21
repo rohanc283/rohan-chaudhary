@@ -36,7 +36,7 @@ const SkillsSection = ({ allSkillsData }) => {
                 {skillsData && skillsData.skills && skillsData.skills.map((item, childIndex) => (
                   <>
                     {item && <div key={childIndex} className={classes.SkillItem}>
-                      {item && item.image && <FramerImage className={classes.SkillImage} priority src={item.image} alt="Tech Skill Item" />}
+                      {item && item.image && <FramerImage className={classes.SkillImage} src={item.image} alt="Tech Skill Item" />}
                       {item && item.title}
                     </div>
                     }
@@ -61,7 +61,7 @@ const SkillsSection = ({ allSkillsData }) => {
             <div className={classes.SkillList}>
               {softSkills && softSkills.skills && softSkills.skills.map((item, childIndex) => (
                 <div key={childIndex} className={classes.SkillItem}>
-                  <FramerImage className={classes.SkillImage} priority src={item.image} alt="Soft Skill Item" />
+                  <FramerImage className={classes.SkillImage} src={item.image} alt="Soft Skill Item" />
                   {item.title}
                 </div>
               ))}
@@ -82,7 +82,7 @@ const SkillsSection = ({ allSkillsData }) => {
             <div className={classes.SkillList}>
               {currentlyLearning && currentlyLearning.map((item, childIndex) => (
                 <div key={childIndex} className={classes.SkillItem}>
-                  <FramerImage width={24} height={24} className={classes.SkillImage} priority src={item.image} alt="Currently Learning Skill Item" />
+                  <FramerImage width={24} height={24} className={classes.SkillImage} src={item.image} alt="Currently Learning Skill Item" />
                   {item.title}
                 </div>
               ))}
