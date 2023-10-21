@@ -69,7 +69,7 @@ const NavBar = () => {
         <>
             {isSuccess && <header className="w-full pr-0 py-6 font-medium flex items-center justify-center dark:text-light relative z-10">
                 <button
-                    className=" flex-col justify-center items-center hidden lg:flex lg:absolute lg:left-20 lg:top-10"
+                    className=" flex-col justify-center items-center hidden lg:flex lg:absolute lg:left-5 lg:top-10"
                     onClick={handleClick}
                 >
                     <span
@@ -170,7 +170,7 @@ const NavBar = () => {
                         className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
                     >
                         <button
-                            className=" flex-col justify-center items-center lg:flex absolute left-10 top-10"
+                            className=" flex-col justify-center items-center lg:flex absolute left-5 top-10"
                             onClick={handleClick}
                         >
                             <span
@@ -289,7 +289,7 @@ const NavBar = () => {
                     </motion.div>
                 ) : null}
 
-                <div className="absolute left-[50%] top-2 translate-x-[-50%] lg:flex hidden">
+                <div className="absolute left-[50%] top-4 translate-x-[-50%] lg:flex hidden">
                     <Logo />
                 </div>
             </header>}
