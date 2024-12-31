@@ -77,7 +77,7 @@ const Education = () => {
     return (
         <motion.div initial="hidden"
             whileInView="show" variants={divVariant(0.2)} className="my-32">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+            <h2 className="font-bold text-6xl mb-32 w-full text-center md:text-4xl xs:text-2xl md:mb-16">
                 Education
             </h2>
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
@@ -102,7 +102,7 @@ export const Courses = ({ courses }) => {
     return (
         <motion.div initial="hidden"
             whileInView="show" variants={divVariant(0.2)} className="mt-32">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-3xl md:mb-16">
+            <h2 className="font-bold text-6xl mb-32 w-full text-center md:text-4xl xs:text-2xl md:mb-16">
                 Courses /<br />Certifications
             </h2>
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">

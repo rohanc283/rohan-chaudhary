@@ -38,7 +38,15 @@ export default function Home() {
                 <motion.main className="flex items-center flex-col justify-center text-dark w-full min-h-screen dark:text-light">
                     <Layout className="p-32 w-full mt-10 pt-0 xl:p-24 lg:p-16 md:p-12 md:pt-16 sm:pt-8">
                         <motion.div initial="hidden"
-                            whileInView="show" variants={divVariant(0.2)} className="flex items-center justify-between w-full lg:flex-col-reverse lg:mt-20">
+                            whileInView="show" variants={divVariant(0.2)} className="flex items-center justify-between w-full lg:flex-col lg:mt-20">
+                            <div className="w-1/2">
+                                <FramerImage
+                                    src={data.profilePic}
+                                    alt="Rohan Chaudhary's generated profile pic"
+                                    className="h-auto m-auto rounded-full shadow-2xl lg:inline-block lg:w-full"
+                                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
+                                />
+                            </div>
                             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
 
                                 <p className="my-4 text-base font-medium mr-1 text-center md:text-sm sm:text-xs lg:mt-10">
@@ -75,14 +83,6 @@ export default function Home() {
                                         HireMe <LinkArrow className={"w-6 ml-1"} />
                                     </Link>
                                 </div>
-                            </div>
-                            <div className="w-1/2">
-                                <FramerImage
-                                    src={data.profilePic}
-                                    alt="Rohan Chaudhary's generated profile pic"
-                                    className="h-auto m-auto rounded-full shadow-2xl lg:inline-block lg:w-full"
-                                    sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
-                                />
                             </div>
                         </motion.div>
                     </Layout>

@@ -64,7 +64,7 @@ const About = () => {
                     <Layout className="p-32 pt-16 xl:p-24 lg:p-16 md:p-12 sm:pt-8 md:mt-10">
                         <AnimatedText
                             text="About Me"
-                            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+                            className="mb-16 lg:!text-6xl sm:!text-4xl xs:!text-2xl sm:mb-8"
                         />
                         <motion.div initial="hidden"
                             whileInView="show" variants={divVariant(0.2)} className="grid w-full grid-cols-8 gap-16 sm:gap-8">

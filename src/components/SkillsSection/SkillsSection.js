@@ -23,7 +23,7 @@ const SkillsSection = ({ allSkillsData }) => {
       {techSkills && <motion.div initial="hidden" whileInView="show" variants={divVariant(0.2)} className={classes['wrapper']}>
         <AnimatedText
           text="Tech Skills"
-          className="mb-5 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          className="mb-5 lg:!text-6xl sm:mb-8 sm:!text-4xl xs:!text-2xl"
         />
         <div className="text-center mb-16 md:mb-16">{allSkillsData.mainLine}</div>
 
@@ -52,7 +52,7 @@ const SkillsSection = ({ allSkillsData }) => {
       {softSkills && <motion.div initial="hidden" whileInView="show" variants={divVariant(0.2)} className={`${classes['wrapper']} my-32`}>
         <AnimatedText
           text={softSkills.title}
-          className="mb-5 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          className="mb-5 lg:!text-6xl sm:mb-8 sm:!text-4xl xs:!text-2xl"
         />
         <div className={`${classes['SkillsContainer']}`}>
 
@@ -73,7 +73,7 @@ const SkillsSection = ({ allSkillsData }) => {
       {currentlyLearning && <motion.div initial="hidden" whileInView="show" variants={divVariant(0.2)} className={`${classes['wrapper']} my-32`}>
         <AnimatedText
           text="Currently Learning"
-          className="mb-5 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          className="mb-5 lg:!text-6xl sm:mb-8 sm:!text-4xl xs:!text-2xl"
         />
         <div className={`${classes['SkillsContainer']}`}>
 
